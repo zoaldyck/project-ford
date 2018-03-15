@@ -6,15 +6,19 @@ body {
 	background-color: #fff;
 }
 
+.repositorio {
+	height: calc(100% - 60px);
+	width: 100%;
+	position: fixed;
+}
+
 /* navbar */
 .navbar-topo {
 	background-color: #537EA3;
-/*	height: 60px;*/
 	color: #FFFFFF;
 	padding: 10px;
-	position: fixed;
 	width: 100%;
-	height: 80
+	height: 60px;
 }
 .navbar-topo ul {
 	float: right;

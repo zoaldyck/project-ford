@@ -1,13 +1,11 @@
 
 /* menu superior */
 .menu_sup {
+	float: left;
 	background-color: #E6E6E6;
 	height: 50px;
 	width: 100%;
-	position: fixed;
 	z-index: 0;
-	display: inline;
-	top: 80px;
 	color: #000;
 	list-style:none;
 	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
@@ -17,12 +15,8 @@
 	-webkit-padding-start: 0px;
 }
 .menu_sup ul li{
-	/* float: left; */
-	padding: 10px 10px 10px 10px;
+	padding: 10px;
 	display: inline;
-	box-sizing: border-box;
-	text-align: -webkit-match-parent;
-	/* cursor: pointer; */
 }
 .menu_sup ul li a:hover {
 	color: #009688;
@@ -31,42 +25,29 @@
 
 /* menu inferior */
 .menu_inf {
-	background-color: #FFFFFF;
+	float: left;
 	height: 50px;
 	width: 100%;
-	position: fixed;
-	display: inline;
 	padding: 10px 20px 0px 20px;
-	bottom: 0px;
-	color: #000;
-	list-style:none;
-	border-top: 2px solid #8FB4D2;
-	margin: 0px;
+	border-top: 1px solid #8FB4D2;
 }
+
 .menu_inf > .col-md-2 {
 	/* float: left; */
 	display: inline;
 	box-sizing: border-box;
 	text-align: -webkit-match-parent;
 }
-.menu_inf select {
-	/* float: left; */
-	padding: 10px 0px 8px 0px;
-	display: inline;
-	box-sizing: border-box;
-	text-align: -webkit-match-parent;
-}
+
 .menu_inf img{
 	margin-right: 20px;
 }
 
 #principal {
-	position: fixed;
-	top: 130px;
-	left: 0px;
+	float: left;
 	width: calc(100% - 200px);
-	height: calc(100% - 180px);
-	padding: 20px 85px 20px 85px;
+	height: calc(100% - 100px);
+	padding: 20px 80px;
 	background-color: #FFFFFF;
 	color: #707070;
 	overflow: auto;
@@ -112,13 +93,11 @@
 }
 
 #lateral_direita {
-	position: fixed;
-	top: 130px;
-	right: 0px;
+	float:left;
 	font-size: 12px;
 	width: 200px;
-	height: calc(100% - 180px);
-	padding: 20px 10px 20px 10px;
+	height: calc(100% - 100px);
+	padding: 20px 10px;
 	background-color: #E1F5FE;
 	color: #707070;
 	overflow: auto;
