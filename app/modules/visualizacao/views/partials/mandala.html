@@ -17,7 +17,7 @@
 
 <div id="box-menu-visualizacao">
 	<div class="option-menu-visualizacao">
-		<button class="btn button-menu-visualizacao">
+		<button ng-click="cancel()" class="btn button-menu-visualizacao">
 			<img />
 			<p>Voltar</p>
 		</button>
@@ -50,8 +50,8 @@
 
 	$( document ).ready(function() {
 
-		x = $( document ).height();
+		y = $( document ).height();
 
-		sunburst_zoom('data/concur.json', x - 150);
+		sunburst_zoom('data/concur.json', y - 150);
 	});
 </script>

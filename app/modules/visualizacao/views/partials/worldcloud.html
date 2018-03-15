@@ -1,0 +1,59 @@
+<style type="text/css">
+	.strVertical_highWord {
+		width: 100%;
+		height: auto;
+		overflow: auto;
+		background-color: white;
+	}
+/*
+	
+	.wordCloudSVG{
+		margin-left: calc(50% - )
+	}
+*/
+</style>
+
+<div id="box-menu-visualizacao">
+	<div class="option-menu-visualizacao">
+		<button ng-click="cancel()" class="btn button-menu-visualizacao">
+			<img />
+			<p>Voltar</p>
+		</button>
+	</div>
+	<div class="option-menu-visualizacao">
+		<select class="dark" style="color:white;">
+			<option value="" disabled selected>Opção de visualização</option>
+			<option value="volvo">Opção 1</option>
+			<option value="saab">Opção 2</option>
+			<option value="mercedes">Opção 3</option>
+		</select>
+	</div>
+	<div class="option-menu-visualizacao">
+		<button class="btn button-menu-visualizacao" style="float: right;">
+			<img />
+			<p>Download</p>
+		</button>
+	</div>
+</div>
+
+
+<div id="wordCloud" class="strVertical_highWord"></div>
+
+<script type="text/javascript">
+
+	$( document ).ready(function() {
+
+		y = $( document ).height();
+		
+//		$(".wordCloudSVG").margin-left();
+		
+		$(".wordCloudSVG").style["margin-left"] = "100px";
+
+
+
+		let data = [{"hashtag":"Lula","count":10},{"hashtag":"Dilma","count":15},{"hashtag":"Bolsonaro","count":3},{"hashtag":"Presidente","count":5},{"hashtag":"Eleições","count":6},{"hashtag":"Politica","count":11},{"hashtag":"Eduardo Cunha","count":12},{"hashtag":"Enem","count":13},{"hashtag":"Duelo","count":4},{"hashtag":"Segundo Turno","count":7}];
+
+		plotWordCloud({width: y-150, height: y-150, divID: 'wordCloud'}, data);
+	});
+
+</script>
